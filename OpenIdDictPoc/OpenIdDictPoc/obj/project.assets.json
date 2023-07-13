@@ -443,6 +443,24 @@
           }
         }
       },
+      "OpenIddict.AspNetCore/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict": "4.5.0",
+          "OpenIddict.Client.AspNetCore": "4.5.0",
+          "OpenIddict.Client.DataProtection": "4.5.0",
+          "OpenIddict.Server.AspNetCore": "4.5.0",
+          "OpenIddict.Server.DataProtection": "4.5.0",
+          "OpenIddict.Validation.AspNetCore": "4.5.0",
+          "OpenIddict.Validation.DataProtection": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net7.0/_._": {}
+        }
+      },
       "OpenIddict.Client/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -461,6 +479,44 @@
             "related": ".xml"
           }
         }
+      },
+      "OpenIddict.Client.AspNetCore/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Client": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Client.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Client.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OpenIddict.Client.DataProtection/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Client": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Client.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Client.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "OpenIddict.Client.SystemIntegration/4.5.0": {
         "type": "package",
@@ -550,6 +606,44 @@
           }
         }
       },
+      "OpenIddict.Server.AspNetCore/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Server": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Server.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Server.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OpenIddict.Server.DataProtection/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Server": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Server.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Server.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "OpenIddict.Validation/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -568,6 +662,44 @@
             "related": ".xml"
           }
         }
+      },
+      "OpenIddict.Validation.AspNetCore/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Validation": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Validation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Validation.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "OpenIddict.Validation.DataProtection/4.5.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenIddict.Validation": "4.5.0"
+        },
+        "compile": {
+          "lib/net7.0/OpenIddict.Validation.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/OpenIddict.Validation.DataProtection.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "OpenIddict.Validation.ServerIntegration/4.5.0": {
         "type": "package",
@@ -1648,6 +1780,22 @@
         "openiddict.abstractions.nuspec"
       ]
     },
+    "OpenIddict.AspNetCore/4.5.0": {
+      "sha512": "eChQLcSM4F2Rv7Emi5zOknuJrKCYaiTI27DCOOS5h49xp4TTU8TqoqukBkAYeCixfGlkNkLZDUpxE9TVd5CdKQ==",
+      "type": "package",
+      "path": "openiddict.aspnetcore/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/_._",
+        "lib/net6.0/_._",
+        "lib/net7.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "openiddict.aspnetcore.4.5.0.nupkg.sha512",
+        "openiddict.aspnetcore.nuspec"
+      ]
+    },
     "OpenIddict.Client/4.5.0": {
       "sha512": "BMFxfyv1Q9PrMUg8uqUTXjYmP9eJ8W0978XywcIyP1h06IbhKRMnXe4PazaJbpnZDTivnnneL06+Yi9THAHZvA==",
       "type": "package",
@@ -1674,6 +1822,50 @@
         "lib/netstandard2.1/OpenIddict.Client.xml",
         "openiddict.client.4.5.0.nupkg.sha512",
         "openiddict.client.nuspec"
+      ]
+    },
+    "OpenIddict.Client.AspNetCore/4.5.0": {
+      "sha512": "3qzumdc9u+jxKhmUZUMqgb9yydRPWPADPAnEcctIY4VmDC3o7icYb/EiCueJGndlzH1x+moy+of2+UfOLBcMKw==",
+      "type": "package",
+      "path": "openiddict.client.aspnetcore/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Client.AspNetCore.dll",
+        "lib/net461/OpenIddict.Client.AspNetCore.xml",
+        "lib/net6.0/OpenIddict.Client.AspNetCore.dll",
+        "lib/net6.0/OpenIddict.Client.AspNetCore.xml",
+        "lib/net7.0/OpenIddict.Client.AspNetCore.dll",
+        "lib/net7.0/OpenIddict.Client.AspNetCore.xml",
+        "lib/netcoreapp3.1/OpenIddict.Client.AspNetCore.dll",
+        "lib/netcoreapp3.1/OpenIddict.Client.AspNetCore.xml",
+        "openiddict.client.aspnetcore.4.5.0.nupkg.sha512",
+        "openiddict.client.aspnetcore.nuspec"
+      ]
+    },
+    "OpenIddict.Client.DataProtection/4.5.0": {
+      "sha512": "kJya24NB7lVtgY85Z8wBHPNZXXQN2BfWAnhYLs3G15Ecrtt9iUQe+lIQrUMvwzMUNYVGsTlP5g8SPbOI5Y7xhA==",
+      "type": "package",
+      "path": "openiddict.client.dataprotection/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Client.DataProtection.dll",
+        "lib/net461/OpenIddict.Client.DataProtection.xml",
+        "lib/net6.0/OpenIddict.Client.DataProtection.dll",
+        "lib/net6.0/OpenIddict.Client.DataProtection.xml",
+        "lib/net7.0/OpenIddict.Client.DataProtection.dll",
+        "lib/net7.0/OpenIddict.Client.DataProtection.xml",
+        "lib/netcoreapp3.1/OpenIddict.Client.DataProtection.dll",
+        "lib/netcoreapp3.1/OpenIddict.Client.DataProtection.xml",
+        "lib/netstandard2.0/OpenIddict.Client.DataProtection.dll",
+        "lib/netstandard2.0/OpenIddict.Client.DataProtection.xml",
+        "lib/netstandard2.1/OpenIddict.Client.DataProtection.dll",
+        "lib/netstandard2.1/OpenIddict.Client.DataProtection.xml",
+        "openiddict.client.dataprotection.4.5.0.nupkg.sha512",
+        "openiddict.client.dataprotection.nuspec"
       ]
     },
     "OpenIddict.Client.SystemIntegration/4.5.0": {
@@ -1808,6 +2000,50 @@
         "openiddict.server.nuspec"
       ]
     },
+    "OpenIddict.Server.AspNetCore/4.5.0": {
+      "sha512": "XXlFpL3FDE5217/qZ+WJ1HIiY9EN8pGu8CZN126ku/5Iw1x/9eu4Sk5Dg2nx2CwLHhSRG6P7sxiJEAWfjB7wSQ==",
+      "type": "package",
+      "path": "openiddict.server.aspnetcore/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Server.AspNetCore.dll",
+        "lib/net461/OpenIddict.Server.AspNetCore.xml",
+        "lib/net6.0/OpenIddict.Server.AspNetCore.dll",
+        "lib/net6.0/OpenIddict.Server.AspNetCore.xml",
+        "lib/net7.0/OpenIddict.Server.AspNetCore.dll",
+        "lib/net7.0/OpenIddict.Server.AspNetCore.xml",
+        "lib/netcoreapp3.1/OpenIddict.Server.AspNetCore.dll",
+        "lib/netcoreapp3.1/OpenIddict.Server.AspNetCore.xml",
+        "openiddict.server.aspnetcore.4.5.0.nupkg.sha512",
+        "openiddict.server.aspnetcore.nuspec"
+      ]
+    },
+    "OpenIddict.Server.DataProtection/4.5.0": {
+      "sha512": "hJBQsI7kYGUxGAJdpzr/qSMfG4YvYlppvtKt4v6qbp7ApVerF7Ms7dQZU6IPMhx3xCmYvfWh8TbUCpUhG3eaLg==",
+      "type": "package",
+      "path": "openiddict.server.dataprotection/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Server.DataProtection.dll",
+        "lib/net461/OpenIddict.Server.DataProtection.xml",
+        "lib/net6.0/OpenIddict.Server.DataProtection.dll",
+        "lib/net6.0/OpenIddict.Server.DataProtection.xml",
+        "lib/net7.0/OpenIddict.Server.DataProtection.dll",
+        "lib/net7.0/OpenIddict.Server.DataProtection.xml",
+        "lib/netcoreapp3.1/OpenIddict.Server.DataProtection.dll",
+        "lib/netcoreapp3.1/OpenIddict.Server.DataProtection.xml",
+        "lib/netstandard2.0/OpenIddict.Server.DataProtection.dll",
+        "lib/netstandard2.0/OpenIddict.Server.DataProtection.xml",
+        "lib/netstandard2.1/OpenIddict.Server.DataProtection.dll",
+        "lib/netstandard2.1/OpenIddict.Server.DataProtection.xml",
+        "openiddict.server.dataprotection.4.5.0.nupkg.sha512",
+        "openiddict.server.dataprotection.nuspec"
+      ]
+    },
     "OpenIddict.Validation/4.5.0": {
       "sha512": "v5cdbbh3wDVgN6K6MVrVMumgJsH/kmKZz+jsP0rrLpYdOtdHSYx8QJwEvzQ1HWKzIzEfixNJRvkI2MvZRw4scQ==",
       "type": "package",
@@ -1832,6 +2068,50 @@
         "lib/netstandard2.1/OpenIddict.Validation.xml",
         "openiddict.validation.4.5.0.nupkg.sha512",
         "openiddict.validation.nuspec"
+      ]
+    },
+    "OpenIddict.Validation.AspNetCore/4.5.0": {
+      "sha512": "e5QN/Lv3HvDDD4GLhrAHu1+gXNyABS+6guf9k6e1xJQFH3KUHQ4wRwzZikLkbrG3zWiIw/fxxjNJqksKhSRLRQ==",
+      "type": "package",
+      "path": "openiddict.validation.aspnetcore/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Validation.AspNetCore.dll",
+        "lib/net461/OpenIddict.Validation.AspNetCore.xml",
+        "lib/net6.0/OpenIddict.Validation.AspNetCore.dll",
+        "lib/net6.0/OpenIddict.Validation.AspNetCore.xml",
+        "lib/net7.0/OpenIddict.Validation.AspNetCore.dll",
+        "lib/net7.0/OpenIddict.Validation.AspNetCore.xml",
+        "lib/netcoreapp3.1/OpenIddict.Validation.AspNetCore.dll",
+        "lib/netcoreapp3.1/OpenIddict.Validation.AspNetCore.xml",
+        "openiddict.validation.aspnetcore.4.5.0.nupkg.sha512",
+        "openiddict.validation.aspnetcore.nuspec"
+      ]
+    },
+    "OpenIddict.Validation.DataProtection/4.5.0": {
+      "sha512": "i2Oc7slB2RU4Hn/xwXWBXCX3SIWlHhaGUq/nLpqfRkJXzfe+7EQMTwHd5ynFfDqpXziWl63N+omFSdBXP+804g==",
+      "type": "package",
+      "path": "openiddict.validation.dataprotection/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/OpenIddict.Validation.DataProtection.dll",
+        "lib/net461/OpenIddict.Validation.DataProtection.xml",
+        "lib/net6.0/OpenIddict.Validation.DataProtection.dll",
+        "lib/net6.0/OpenIddict.Validation.DataProtection.xml",
+        "lib/net7.0/OpenIddict.Validation.DataProtection.dll",
+        "lib/net7.0/OpenIddict.Validation.DataProtection.xml",
+        "lib/netcoreapp3.1/OpenIddict.Validation.DataProtection.dll",
+        "lib/netcoreapp3.1/OpenIddict.Validation.DataProtection.xml",
+        "lib/netstandard2.0/OpenIddict.Validation.DataProtection.dll",
+        "lib/netstandard2.0/OpenIddict.Validation.DataProtection.xml",
+        "lib/netstandard2.1/OpenIddict.Validation.DataProtection.dll",
+        "lib/netstandard2.1/OpenIddict.Validation.DataProtection.xml",
+        "openiddict.validation.dataprotection.4.5.0.nupkg.sha512",
+        "openiddict.validation.dataprotection.nuspec"
       ]
     },
     "OpenIddict.Validation.ServerIntegration/4.5.0": {
@@ -2255,6 +2535,7 @@
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.7",
       "OpenIddict >= 4.5.0",
+      "OpenIddict.AspNetCore >= 4.5.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2311,6 +2592,10 @@
             "version": "[7.0.7, )"
           },
           "OpenIddict": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
+          "OpenIddict.AspNetCore": {
             "target": "Package",
             "version": "[4.5.0, )"
           },
